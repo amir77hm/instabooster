@@ -2,12 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { Shield, Users, Zap, CheckCircle } from "lucide-react";
+import Link from "next/link";
 
-interface HomePageProps {
-  onGetStarted: () => void;
-}
-
-export default function HomePage({ onGetStarted }: HomePageProps) {
+export default function HomePage() {
   const features = [
     {
       icon: Shield,
@@ -55,13 +52,11 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
                 regulations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  onClick={onGetStarted}
-                  size="lg"
-                  className="px-8 instagram-button"
-                >
-                  Get Started
-                </Button>
+                <Link href="/auth/login">
+                  <Button size="lg" className="px-8 instagram-button">
+                    Get Started
+                  </Button>
+                </Link>
                 <Button variant="outline" size="lg" className="px-8">
                   Learn More
                 </Button>
@@ -142,12 +137,11 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
                 Create your account today and experience secure Instagram
                 integration with full control over your data.
               </p>
-              <Button
-                onClick={onGetStarted}
-                className="w-full instagram-button"
-              >
-                Create Account
-              </Button>
+              <Link href="/auth/login">
+                <Button className="w-full instagram-button">
+                  Create Account
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -163,14 +157,15 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
             Experience the most secure and user-friendly Instagram integration
             platform.
           </p>
-          <Button
-            onClick={onGetStarted}
-            variant="secondary"
-            size="lg"
-            className="px-8 hover:scale-105 transition-transform duration-200"
-          >
-            Get Started Today
-          </Button>
+          <Link href="/auth/login">
+            <Button
+              variant="secondary"
+              size="lg"
+              className="px-8 hover:scale-105 transition-transform duration-200"
+            >
+              Get Started Today
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

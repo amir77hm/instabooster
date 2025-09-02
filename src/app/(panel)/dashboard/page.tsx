@@ -32,11 +32,7 @@ import {
   Calendar,
 } from "lucide-react";
 
-interface DashboardProps {
-  userEmail: string;
-}
-
-export default function Dashboard({ userEmail }: DashboardProps) {
+export default function Dashboard() {
   const [tokens, setTokens] = useState([
     {
       id: "1",
@@ -93,7 +89,9 @@ export default function Dashboard({ userEmail }: DashboardProps) {
           </div>
           <div className="flex items-center space-x-2">
             <User className="h-4 w-4 text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">{userEmail}</span>
+            <span className="text-sm text-muted-foreground">
+              test@gmail.com
+            </span>
           </div>
         </div>
 
@@ -345,7 +343,7 @@ export default function Dashboard({ userEmail }: DashboardProps) {
       <div className="space-y-6">
         <div>
           <h1 className="text-2xl font-bold">Dashboard Overview</h1>
-          <p className="text-muted-foreground">Welcome back, {userEmail}</p>
+          <p className="text-muted-foreground">Welcome back</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

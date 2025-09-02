@@ -15,8 +15,6 @@ import {
   Home,
   Settings,
   Key,
-  Activity,
-  Users,
   LogOut,
   Instagram,
   Shield,
