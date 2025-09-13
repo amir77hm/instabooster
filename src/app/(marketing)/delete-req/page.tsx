@@ -15,25 +15,27 @@ export default function DeleteRequest() {
   const deletionSteps = [
     {
       icon: User,
-      title: "Login to your account",
+      title: "Log in to your account",
       description:
-        "Access your account on our platform using your credentials.",
+        "Sign in to our platform using the same account connected to Facebook or Instagram.",
     },
     {
       icon: Settings,
-      title: "Navigate to Account Settings",
-      description: "Go to your Account Settings or Dashboard section.",
+      title: "Go to Account Settings",
+      description:
+        "Open your profile settings or dashboard to manage your linked accounts.",
     },
     {
       icon: Trash2,
-      title: 'Click "Delete Facebook/Instagram Data"',
-      description: "Find and click the deletion button to remove your data.",
+      title: 'Select "Delete Facebook/Instagram Data"',
+      description:
+        "Click the deletion option to request removal of all linked Facebook and Instagram data.",
     },
     {
       icon: ShieldCheck,
-      title: "Immediate deletion",
+      title: "Data permanently deleted",
       description:
-        "All Facebook- and Instagram-related data is permanently removed from our servers.",
+        "Your associated data will be erased immediately and cannot be recovered.",
     },
   ];
 
@@ -63,11 +65,13 @@ export default function DeleteRequest() {
                 User Data Deletion Instructions
               </CardTitle>
               <p className="text-muted-foreground text-lg">
-                If you have linked your Facebook or Instagram account to our
-                platform and wish to delete your associated data, you can do so
-                at any time.
+                If you have linked your Facebook or Instagram account with our
+                platform and would like to remove your data, you may request
+                deletion at any time. Please follow the instructions below or
+                contact our support team for assistance.
               </p>
             </CardHeader>
+
             <CardContent className="space-y-8">
               <div className="text-center">
                 <h3 className="mb-6 text-foreground">
@@ -127,11 +131,12 @@ export default function DeleteRequest() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
                     "Instagram access tokens",
-                    "Connected account information",
-                    "Message data and history",
-                    "Profile data and settings",
-                    "Usage analytics and logs",
-                    "Cached Instagram content",
+                    "Connected account details (username, ID)",
+                    "Direct message data and history",
+                    "Comment and engagement data",
+                    "Profile settings and linked preferences",
+                    "Analytics, logs, and activity records",
+                    "Cached Instagram media and content",
                   ].map((item, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />

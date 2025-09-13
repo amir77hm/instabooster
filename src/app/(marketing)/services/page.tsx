@@ -23,42 +23,42 @@ export default function Services() {
   const mainServices = [
     {
       icon: Instagram,
-      title: "Instagram API Integration",
+      title: "Instagram Messaging Hub",
       description:
-        "Seamlessly connect to Instagram's official API with secure token management and real-time data access.",
+        "Manage all your Direct Messages and comments from one secure dashboard.",
       features: [
-        "Secure token storage",
-        "Real-time sync",
-        "Rate limit management",
-        "Error handling",
+        "Unified inbox for DMs and comments",
+        "Reply to multiple users at once",
+        "Message search & filters",
+        "Notifications for new activity",
       ],
       pricing: "Free",
-      popular: false,
-    },
-    {
-      icon: Shield,
-      title: "Enterprise Security",
-      description:
-        "Bank-grade security with GDPR compliance, encrypted data storage, and complete audit trails.",
-      features: [
-        "End-to-end encryption",
-        "GDPR compliance",
-        "Audit logs",
-        "SOC 2 certified",
-      ],
-      pricing: "Contact us",
       popular: true,
     },
     {
-      icon: BarChart3,
-      title: "Analytics & Insights",
+      icon: Shield,
+      title: "Privacy & Security",
       description:
-        "Comprehensive analytics dashboard with custom reporting and data visualization tools.",
+        "We keep your Instagram data safe with encrypted token storage and full user control.",
       features: [
-        "Custom dashboards",
-        "Export capabilities",
-        "Real-time metrics",
-        "Historical data",
+        "Encrypted token storage",
+        "Permissions transparency",
+        "Easy account disconnect",
+        "Data deletion on request",
+      ],
+      pricing: "Included",
+      popular: false,
+    },
+    {
+      icon: BarChart3,
+      title: "AI Insights & Smart Replies",
+      description:
+        "Boost engagement with AI-powered reply suggestions, sentiment-to-emoji responses, and performance insights.",
+      features: [
+        "Smart reply suggestions",
+        "Sentiment-based emojis",
+        "Best-time-to-post tips",
+        "Engagement analytics",
       ],
       pricing: "From $29/month",
       popular: false,
@@ -96,19 +96,20 @@ export default function Services() {
     {
       step: "1",
       title: "Create Account",
-      description: "Sign up for a free account and verify your email address.",
+      description:
+        "Sign up for a free InstaBooster account and verify your email to get started.",
     },
     {
       step: "2",
       title: "Connect Instagram",
       description:
-        "Authorize our app to access your Instagram account with the permissions you choose.",
+        "Securely log in with Instagram and grant permissions to manage messages and comments.",
     },
     {
       step: "3",
-      title: "Start Building",
+      title: "Start Managing",
       description:
-        "Use our secure API endpoints to build amazing Instagram-integrated applications.",
+        "Access your dashboard to reply to DMs, manage comments, and use AI-powered smart replies.",
     },
   ];
 
@@ -118,19 +119,20 @@ export default function Services() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <Badge variant="outline" className="mb-4">
-            Instagram Developer Platform
+            Instagram Management Platform
           </Badge>
           <h1 className="text-4xl lg:text-6xl font-medium text-foreground mb-6">
-            Professional Instagram
-            <span className="text-primary"> Integration Services</span>
+            Smarter
+            <span className="text-primary"> Instagram Engagement</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Build powerful applications with secure Instagram API access.
-            Enterprise-grade security, GDPR compliance, and developer-friendly
-            tools.
+            Manage your Instagram Direct Messages and comments from one secure
+            dashboard. Boost your productivity with AI-powered reply
+            suggestions, sentiment-based emojis, and engagement insights — all
+            while keeping your data private and secure.
           </p>
           <Button size="lg" className="px-8">
-            Get Started Free
+            Connect with Instagram
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
@@ -144,8 +146,9 @@ export default function Services() {
               Our Services
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Everything you need to build secure, scalable Instagram
-              integrations.
+              Tools designed to help businesses and creators manage Instagram
+              more efficiently — from smart DM handling to comment moderation
+              and audience engagement insights.
             </p>
           </div>
 
@@ -271,34 +274,38 @@ export default function Services() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-medium text-foreground mb-6">
-                Enterprise-Grade Compliance
+                Privacy & Security First
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                We take compliance seriously. Our platform meets the highest
-                standards for data protection, privacy, and security to ensure
-                your Instagram integrations are always compliant.
+                We keep your Instagram data safe with encrypted token storage,
+                clear permissions, and full user control. You decide what to
+                share and can disconnect anytime.
               </p>
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 border border-border rounded-lg">
                   <Shield className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <h3 className="font-medium text-foreground">GDPR</h3>
-                  <p className="text-sm text-muted-foreground">Compliant</p>
+                  <h3 className="font-medium text-foreground">Encrypted</h3>
+                  <p className="text-sm text-muted-foreground">Token Storage</p>
                 </div>
                 <div className="text-center p-4 border border-border rounded-lg">
                   <Lock className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <h3 className="font-medium text-foreground">SOC 2</h3>
-                  <p className="text-sm text-muted-foreground">Type II</p>
+                  <h3 className="font-medium text-foreground">Permissions</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Transparent Access
+                  </p>
                 </div>
                 <div className="text-center p-4 border border-border rounded-lg">
                   <CheckCircle className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <h3 className="font-medium text-foreground">ISO 27001</h3>
-                  <p className="text-sm text-muted-foreground">Certified</p>
+                  <h3 className="font-medium text-foreground">Data Control</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Delete Anytime
+                  </p>
                 </div>
                 <div className="text-center p-4 border border-border rounded-lg">
                   <Instagram className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <h3 className="font-medium text-foreground">Instagram</h3>
-                  <p className="text-sm text-muted-foreground">Approved</p>
+                  <h3 className="font-medium text-foreground">Meta</h3>
+                  <p className="text-sm text-muted-foreground">API Compliant</p>
                 </div>
               </div>
             </div>
@@ -315,15 +322,15 @@ export default function Services() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>End-to-end encryption</span>
+                      <span>Encrypted token storage</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Zero-knowledge architecture</span>
+                      <span>Permissions transparency</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Regular security audits</span>
+                      <span>Easy account disconnect</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -340,15 +347,15 @@ export default function Services() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Right to data portability</span>
+                      <span>Access to personal data</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Right to deletion</span>
+                      <span>Account & data deletion</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-primary" />
-                      <span>Transparent data usage</span>
+                      <span>Clear data usage policies</span>
                     </li>
                   </ul>
                 </CardContent>

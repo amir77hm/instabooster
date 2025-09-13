@@ -8,31 +8,31 @@ export default function HomePage() {
   const features = [
     {
       icon: Shield,
-      title: "Secure & Compliant",
+      title: "Reply to Direct Messages",
       description:
-        "Your data is protected with enterprise-grade security and full GDPR compliance.",
+        "Read and respond to all your Instagram DMs from a simple, secure dashboard.",
     },
     {
       icon: Users,
-      title: "User Management",
+      title: "Manage Comments Easily",
       description:
-        "Complete user account management with easy registration and account deletion.",
+        "Moderate and reply to comments on your posts without switching apps.",
     },
     {
       icon: Zap,
-      title: "Instagram Integration",
+      title: "AI-Powered Assistance",
       description:
-        "Seamlessly connect with Instagram to access your messages and data.",
+        "Get smart reply suggestions, sentiment-based emojis, and engagement insights powered by AI.",
     },
   ];
 
   const benefits = [
-    "Full transparency in data usage",
-    "Easy account deletion process",
-    "Secure token management",
-    "GDPR compliant data handling",
-    "Clear privacy policies",
-    "24/7 support available",
+    "Transparent data usage and practices",
+    "Simple account deletion process",
+    "Secure and encrypted token management",
+    "GDPR-compliant data handling",
+    "Clear and accessible privacy policies",
+    "24/7 customer support",
   ];
 
   return (
@@ -43,13 +43,12 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
-                Connect Your Instagram
-                <span className="instagram-gradient-text"> Securely</span>
+                Manage Your Instagram Smarter{" "}
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-xl">
-                Our platform provides secure Instagram integration with full
-                transparency, user control, and compliance with all privacy
-                regulations.
+                Connect your Instagram account securely and manage your Direct
+                Messages, Comments, and Engagement — all from one simple
+                dashboard. Powered by AI to help you reply faster and smarter.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/auth/login">
